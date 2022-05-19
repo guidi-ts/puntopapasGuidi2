@@ -51,9 +51,9 @@ h2 {
     padding: 1.5rem;
     display: grid;
     grid-template-areas: "h2Index"
-                         "imgIndex"
-                         "pIndex";
-    justify-items: center;                     
+        "imgIndex"
+        "pIndex";
+    justify-items: center;
 }
 
 
@@ -63,9 +63,10 @@ h2 {
     margin: 2.5rem;
     justify-self: center;
     display: none;
-   
+
 }
-.h2Index{
+
+.h2Index {
     grid-area: h2Index;
     text-align: center;
 }
@@ -78,18 +79,21 @@ h2 {
     font-weight: 200;
 
 }
-.mainCombos{
+
+.mainCombos {
     grid-template-areas: "h2Combos"
-                         "tableCombos"; 
-    justify-items:center;                                       
+        "tableCombos";
+    justify-items: center;
 }
-.tableCombos{
-    grid-area:tableCombos;
+
+.tableCombos {
+    grid-area: tableCombos;
     display: flex;
     justify-content: center;
-    margin: 2rem;   
+    margin: 2rem;
 }
-.h2Combos{
+
+.h2Combos {
     grid-area: h2Combos;
     text-align: center;
 }
@@ -142,25 +146,66 @@ td {
 .manito {
     margin: 30px;
 }
-.imgCombos{
+
+.imgCombos {
     display: none;
     height: 260px;
     justify-content: center;
-    
+
 }
 
 
 
 @media screen and (min-width:600px) {
-    
-    .imgIndex{
+
+    .imgIndex {
         display: block;
     }
-    .imgCombos{
+
+    .imgCombos {
         display: flex;
     }
-
 }
 
+li:hover {
+    transform: scale(1.1);
+}
+
+.animacionIndex {
+    animation-name: indexAnimacion;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes indexAnimacion {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+}
+
+.animacionCombos{
+    animation-name: combosAnimacion;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes combosAnimacion{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+h1:hover{
+    transform: rotate(180deg);
+}
 
 
