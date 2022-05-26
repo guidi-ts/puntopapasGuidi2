@@ -4,43 +4,43 @@
     box-sizing: border-box;
 }
 
-h1 {
+h1 {   
     margin: 0.9px;
-    background-color: yellowgreen;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    text-align: center;
-
+    font-style: italic;    
 }
 
 body {
-    background-color: rgb(246, 197, 137);
+    background-color:mediumspringgreen
 }
 
 nav {
-
     margin: 20px;
-    background-color: burlywood;
     position: sticky;
     top: 0;
     z-index: 1;
     text-align: end;
+    border: outset lightblue;
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none
+    list-style-type: none;
+    background-color: lightblue;
 }
 
-nav ul li {
+nav ul li { 
+    font-size: large;
     margin: 0.5px;
-    border-radius: 1rem;
-    padding: 0.3rem;
-
-
+    padding: 0.3px;
+    text-align: center;
+       
 }
-
+.navbar-brand{
+    font-size: x-large;
+}
+ 
 h2 {
     text-align: start;
     margin: 20px;
@@ -92,6 +92,14 @@ h2 {
     justify-content: center;
     margin: 2rem;
 }
+
+
+
+tr td{
+    border: groove black;
+}
+
+
 
 .h2Combos {
     grid-area: h2Combos;
@@ -188,24 +196,23 @@ li:hover {
     }
 }
 
-.animacionCombos{
+.animacionCombos {
     animation-name: combosAnimacion;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes combosAnimacion{
-    from{
+@keyframes combosAnimacion {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
 
-h1:hover{
+h1:hover {
     transform: rotate(180deg);
 }
-
-
